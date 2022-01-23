@@ -6,15 +6,15 @@ function Navbar() {
 
     const [location, setLocation] = useState('');
     const [data, setData] = useState({});
+    
+    const date = new Date().toLocaleDateString();
+    
 
-    // const handleChange = (e) => {
-    //   setLocation( e.target.value )
-    // }
 
-    // const api = {
-    //   key : "9aa887d6139b52879968085ce16d71b6"
-    // }
 
+
+
+    // `api.openweathermap.org/data/2.5/forecast/daily?q=${location}&cnt=5&appid=9aa887d6139b52879968085ce16d71b6`
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=9aa887d6139b52879968085ce16d71b6`
 
@@ -33,10 +33,7 @@ function Navbar() {
         setLocation('')
       }
     }
-
-
-    const current = new Date();
-    const date = `${current.getDate().toLocaleString()}/${current.getMonth()+1}/${current.getFullYear()}`;
+    
 
 
     return (
