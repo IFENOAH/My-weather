@@ -14,7 +14,7 @@ function Navbar() {
     // `api.openweathermap.org/data/2.5/forecast/daily?q=${location}&cnt=5&appid=9aa887d6139b52879968085ce16d71b6`
 
     const url_one = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=9aa887d6139b52879968085ce16d71b6`
-    const url_two = `https://api.openweathermap.org/data/2.5/forecast/?q=${location}&cnt=5&units=metric&appid=9aa887d6139b52879968085ce16d71b6`
+    const url_two = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${location}&cnt=16&appid=9aa887d6139b52879968085ce16d71b6`
 
   
     const handleSearch = (event ) => {
@@ -94,34 +94,14 @@ function Navbar() {
             <div className = "days-container">
 
               <div className = "days">
-                <h1 className = "date"> {days.list[0].dt_txt} </h1>
-
-                <div className = "temp-holder">
-                  <h2 className = "day-temp">{days.list[0].main.temp.toFixed()}<sup>°c</sup></h2>
-                  <h6 className = "day-hi-lo"> {Math.round(days.list[0].main.temp_min)}<sup>°c</sup>/{Math.round(days.list[0].main.temp_max)}<sup>°c</sup> </h6>
-                </div>
-                {/* <h2> {days.list[0].weather[0].main} </h2> */}
-                <img src = {`https://openweathermap.org/img/wn/${days.list[0].weather[0].icon}@2x.png`} />
-              </div>
-
-              <div className = "days">
                 <h1 className = "date"> {days.list[1].dt_txt} </h1>
+
                 <div className = "temp-holder">
                   <h2 className = "day-temp">{days.list[1].main.temp.toFixed()}<sup>°c</sup></h2>
                   <h6 className = "day-hi-lo"> {Math.round(days.list[1].main.temp_min)}<sup>°c</sup>/{Math.round(days.list[1].main.temp_max)}<sup>°c</sup> </h6>
                 </div>
                 {/* <h2> {days.list[0].weather[0].main} </h2> */}
                 <img src = {`https://openweathermap.org/img/wn/${days.list[1].weather[0].icon}@2x.png`} />
-              </div>
-
-              <div className = "days">
-                <h1 className = "date"> {days.list[2].dt_txt} </h1>
-                <div className = "temp-holder">
-                  <h2 className = "day-temp">{days.list[2].main.temp.toFixed()}<sup>°c</sup></h2>
-                  <h6 className = "day-hi-lo"> {Math.round(days.list[2].main.temp_min)}<sup>°c</sup>/{Math.round(days.list[2].main.temp_max)}<sup>°c</sup> </h6>
-                </div>
-                {/* <h2> {days.list[0].weather[0].main} </h2> */}
-                <img src = {`https://openweathermap.org/img/wn/${days.list[2].weather[0].icon}@2x.png`} />
               </div>
 
               <div className = "days">
@@ -135,13 +115,33 @@ function Navbar() {
               </div>
 
               <div className = "days">
-                <h1 className = "date"> {days.list[4].dt_txt} </h1>
+                <h1 className = "date"> {days.list[5].dt_txt} </h1>
                 <div className = "temp-holder">
-                  <h2 className = "day-temp">{days.list[4].main.temp.toFixed()}<sup>°c</sup></h2>
-                  <h6 className = "day-hi-lo"> {Math.round(days.list[4].main.temp_min)}<sup>°c</sup>/{Math.round(days.list[4].main.temp_max)}<sup>°c</sup> </h6>
+                  <h2 className = "day-temp">{days.list[5].main.temp.toFixed()}<sup>°c</sup></h2>
+                  <h6 className = "day-hi-lo"> {Math.round(days.list[5].main.temp_min)}<sup>°c</sup>/{Math.round(days.list[5].main.temp_max)}<sup>°c</sup> </h6>
                 </div>
                 {/* <h2> {days.list[0].weather[0].main} </h2> */}
-                <img src = {`https://openweathermap.org/img/wn/${days.list[4].weather[0].icon}@2x.png`} />
+                <img src = {`https://openweathermap.org/img/wn/${days.list[5].weather[0].icon}@2x.png`} />
+              </div>
+
+              <div className = "days">
+                <h1 className = "date"> {days.list[7].dt_txt} </h1>
+                <div className = "temp-holder">
+                  <h2 className = "day-temp">{days.list[7].main.temp.toFixed()}<sup>°c</sup></h2>
+                  <h6 className = "day-hi-lo"> {Math.round(days.list[7].main.temp_min)}<sup>°c</sup>/{Math.round(days.list[7].main.temp_max)}<sup>°c</sup> </h6>
+                </div>
+                {/* <h2> {days.list[0].weather[0].main} </h2> */}
+                <img src = {`https://openweathermap.org/img/wn/${days.list[7].weather[0].icon}@2x.png`} />
+              </div>
+
+              <div className = "days">
+                <h1 className = "date"> {days.list[9].dt_txt} </h1>
+                <div className = "temp-holder">
+                  <h2 className = "day-temp">{days.list[9].main.temp.toFixed()}<sup>°c</sup></h2>
+                  <h6 className = "day-hi-lo"> {Math.round(days.list[9].main.temp_min)}<sup>°c</sup>/{Math.round(days.list[9].main.temp_max)}<sup>°c</sup> </h6>
+                </div>
+                {/* <h2> {days.list[0].weather[0].main} </h2> */}
+                <img src = {`https://openweathermap.org/img/wn/${days.list[9].weather[0].icon}@2x.png`} />
               </div>
 
               
