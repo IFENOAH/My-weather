@@ -85,6 +85,18 @@ html{
   transition: 0.2s ease-out; 
 }
 
+@media screen and ( max-width: 768px) {
+  .input{
+    width: 18rem;
+  }
+}
+
+@media screen and ( max-width: 400px) {
+  .input{
+    width: 13rem;
+  }
+}
+
 input{
   width: 100%;
   padding: .3rem;
