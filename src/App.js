@@ -14,7 +14,7 @@ function Navbar() {
     // `api.openweathermap.org/data/2.5/forecast/daily?q=${location}&cnt=5&appid=9aa887d6139b52879968085ce16d71b6`
 
     const url_one = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=9aa887d6139b52879968085ce16d71b6`
-    const url_two = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&cnt=16&appid=9aa887d6139b52879968085ce16d71b6`
+    const url_two = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&cnt=16&units=metric&appid=9aa887d6139b52879968085ce16d71b6`
 
   
     const handleSearch = (event ) => {
