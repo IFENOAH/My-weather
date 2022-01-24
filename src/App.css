@@ -19,7 +19,7 @@ html{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url('/Images/cloud.jpg');
+  background: url('Images/cloud.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -70,9 +70,12 @@ html{
   }
 }
 
-input{
-  width: 100%;
-  padding: 1rem 3rem;
+.input{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 30%;
+  padding: .7rem 1.5rem;
   border: none;
   outline: none;
   background-color: rgba(73, 73, 73, 0.705);
@@ -84,8 +87,19 @@ input{
   transition: 0.2s ease-out; 
 }
 
+input{
+  width: 100%;
+  padding: .3rem;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: .9rem;
+}
+
 ::placeholder {
-  color: rgba(255, 255, 255, 0.719);
+  color: rgba(213, 213, 213, 0.719);
+  margin-left: .3rem;
 }
 
 .banner-content{
@@ -125,8 +139,8 @@ input{
 
 .temp{
   color: #fff;
-  font-size: 1.8rem;
-  padding: 2rem;
+  font-size: 2.8rem;
+  padding: 1.5rem;
 }
 
 .description{

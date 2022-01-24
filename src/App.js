@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from 'react'
 import axios from 'axios';
+import image1 from './Images/searchh.svg'
 
 function Navbar() {
 
@@ -9,9 +10,6 @@ function Navbar() {
     
     const date = new Date().toLocaleDateString();
     
-
-
-
 
 
     // `api.openweathermap.org/data/2.5/forecast/daily?q=${location}&cnt=5&appid=9aa887d6139b52879968085ce16d71b6`
@@ -53,6 +51,9 @@ function Navbar() {
         <div className = "banner-content">
 
           <div className = "input">
+
+            <img src = {image1} alt = "search icon" width = {18} height = {18} />
+
             <input 
             type = "text"
             placeholder = "search city" 
